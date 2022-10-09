@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Bitter";
+  background-color: rgba(249, 248, 248, 1);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+.container {
+  width: 100%;
+  max-width: 1360px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+main {
+  background-image: url("../img/bg.png");
+}

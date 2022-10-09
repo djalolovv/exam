@@ -1,0 +1,209 @@
+.header-cap {
+  padding: 13px 0px;
+  @include flex;
+  justify-content: space-between;
+  padding-left: 181px;
+  background-color: rgba(249, 248, 248, 1);
+}
+.list-wrapper {
+  @include flex;
+}
+.cap-item__link {
+  position: relative;
+  @include cap-link;
+  padding-left: 23px;
+}
+.cap-item__link::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 13px;
+  background-image: url("../../img/house.svg");
+  background-repeat: no-repeat;
+  left: 0;
+}
+.cap-item2__link {
+  position: relative;
+  @include cap-link;
+  padding-left: 23px;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-image: url("../../img/phone.svg");
+    background-repeat: no-repeat;
+    left: 0;
+  }
+}
+.cap-item3__link {
+  position: relative;
+  padding-left: 13px;
+}
+.cap-item3__link::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: $main-color;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 0;
+}
+.cap-item3__link {
+  @include cap-link;
+}
+.cap-item4__text {
+  position: relative;
+  padding-left: 21px;
+  @include cap-link;
+}
+.cap-item4__text::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-image: url("../../img/kalendar.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 0;
+}
+.cap-item5__text {
+  @include cap-link;
+}
+.header-cap__list {
+  margin-right: 9px;
+}
+.header-cap__list3 {
+  margin-left: 9px;
+}
+
+.header-cap__list4 {
+  margin-right: 17px;
+}
+.site-header {
+  background-color: rgba(255, 255, 255, 1);
+}
+.site-header__container {
+  padding-left: 292px;
+  position: relative;
+}
+.site-header__logo {
+  position: absolute;
+  width: 177px;
+  height: 87px;
+  top: -21px;
+  left: 0;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.site-header__list {
+  display: flex;
+}
+.site-header__link,
+.site-header__link1,
+.site-header__link2 {
+  @include header-links;
+}
+.site-header__link1 {
+  padding-left: 27px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../img/fish.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 0;
+  }
+}
+.site-header__link2 {
+  position: relative;
+  padding-left: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(51, 51, 51, 1);
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 0;
+  }
+}
+.list__wrapper {
+  justify-content: space-between;
+  @include flex;
+}
+.site-header__btn {
+  @include header-btn;
+  padding-left: 27px;
+  position: relative;
+}
+.site-header__burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../img/burgr-btn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+}
+.site-header__btn::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/trace.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 23px;
+  height: 21px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.site-header__item:not(:first-child) {
+  margin-left: 55px;
+}
+@media only screen and (max-width: 1370px) {
+  .site-header__container {
+    width: 100%;
+  }
+  .header-cap {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1325px) {
+  .list__wrapper {
+    display: none;
+  }
+  .site-header__logo {
+    position: relative;
+    margin-top: 25px;
+  }
+  .site-header__burger {
+    display: block;
+    margin-left: 0;
+  }
+  .site-header__container {
+    padding: 0;
+    @include flex;
+    justify-content: space-between;
+  }
+}

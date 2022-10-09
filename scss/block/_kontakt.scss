@@ -1,0 +1,92 @@
+.kontakt-container {
+  margin-top: 262px;
+  display: flex;
+}
+.kontakt-box {
+  flex-grow: 3;
+  background-color: rgba(51, 51, 51, 1);
+  background-image: url("../../img/kontakt-img.png"),
+    url("../../img/kontakt-img2.png"), url("../../img/kontakt-img3.png"),
+    url("../../img/kontakt-img4.png"), url("../../img/Question.png"),
+    url("../../img/Feedback.png"), url("../../img/kontakt-img5.png"),
+    url("../../img/kontakt-img6.png"), url("../../img/kontakt-img7.png"),
+    url("../../img/fish-bg.png");
+  background-repeat: no-repeat;
+  background-position-y: 356px, center, 71px, 71px, 31px, 120px, 200px, 380px,
+    370px, 90px;
+  background-position-x: 15px, 45px, 75px, 520px, 650px, 450px, 670px, 390px,
+    750px, right;
+  padding-bottom: 71px;
+}
+.kontakt__title {
+  @include kontakt-title;
+}
+.kontakt-texs {
+  margin-top: 62px;
+  margin-left: 185px;
+}
+.kontakt__text {
+  @include kontakt-text;
+  max-width: 454px;
+  margin-top: 16px;
+  margin-bottom: 29px;
+}
+.kontakt__input {
+  display: block;
+  height: 50px;
+  width: 375px;
+  padding-left: 22px;
+  border: 2px solid transparent;
+  outline: none;
+  margin-bottom: 14px;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  &:focus {
+    border: 2px solid $main-color;
+  }
+}
+.kontakt__text-area {
+  height: 165px;
+  margin-bottom: 30px;
+}
+.kontakt__btn {
+  @include kontakt-btn;
+}
+@media only screen and (max-width: 1390px) {
+  .kontakt-container {
+    flex-direction: column;
+  }
+  .kontackt-iframe {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1046px) {
+  .kontakt-box {
+    background-image: url("../../img/kontakt-img.png"),
+      url("../../img/kontakt-img2.png"), url("../../img/kontakt-img3.png"),
+      url("../../img/kontakt-img4.png"), url("../../img/Question.png"),
+      url("../../img/Feedback.png"), url("../../img/kontakt-img5.png"),
+      url("../../img/kontakt-img6.png"), url("../../img/kontakt-img7.png"),
+      url("../");
+  }
+  .kontakt-texs {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .kontakt__text,
+  .kontakt__input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .kontakt__title {
+    font-size: 35px;
+  }
+  .kontakt__input {
+    width: 300px;
+  }
+}

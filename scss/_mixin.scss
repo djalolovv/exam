@@ -1,0 +1,254 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+@mixin cap-link {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  &:hover {
+    color: $main-color;
+  }
+  &:active {
+    color: #333333;
+    opacity: 0.6;
+  }
+}
+@mixin header-links {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  border-bottom: 4px solid transparent;
+  &:hover {
+    border-color: #f4ffad;
+  }
+  &:active {
+    border-color: rgba(244, 255, 173, 1);
+  }
+}
+@mixin header-btn {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+@mixin hero-title {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+@mixin hero-text {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+}
+@mixin hero-btn {
+  background-color: #333333;
+  border-radius: 3px;
+  padding: 15px 48px 16px 47px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  &:hover {
+    background-color: rgba(255, 189, 84, 1);
+    color: #333333;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+@mixin iqtibos-line {
+  width: 140px;
+  height: 1px;
+  border: none;
+  background-color: rgba(219, 219, 219, 1);
+}
+@mixin iqtibos-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #949494;
+}
+@mixin xizmatlar-title {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  color: #333333;
+}
+@mixin xizmatlar-item-title {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+@mixin xizmatlar-banner-title {
+  color: rgba(51, 51, 51, 1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 20px;
+  font-family: "Bitter";
+}
+@mixin xizmatlar-bannner-text {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+}
+@mixin xizmatlar-btn {
+  background-color: $main-color;
+  color: white;
+  padding: 15px 36px 16px 63px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 3px;
+  background-image: url("../img/money.svg");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position-x: 25px;
+  background-position-y: center;
+  &:hover {
+    color: rgba(51, 51, 51, 1);
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+@mixin xizmatlar-btn2 {
+  background-color: #333333;
+  border-radius: 3px;
+  padding: 14px 37px 14px 64px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  background-image: url("../img/document.svg");
+  background-repeat: no-repeat;
+  background-size: 21px;
+  background-position-x: 30px;
+  background-position-y: center;
+  &:hover {
+    color: $main-color;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+@mixin obuna-title {
+  font-family: "Bitter";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  color: #ffffff;
+}
+@mixin maqolalar-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  color: #333333;
+}
+@mixin maqolalar-item-date {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #949494;
+}
+@mixin maqolalar-item-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 25px;
+  color: #000000;
+}
+@mixin maqolalar-item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+}
+@mixin maqolalar-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  &:hover {
+    color: $main-color;
+  }
+  &:active {
+    color: #333333;
+    opacity: 0.6;
+  }
+}
+@mixin hashtags {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #3d9cea;
+}
+@mixin kontakt-title {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  color: #ffffff;
+}
+@mixin kontakt-text {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin: 0;
+}
+@mixin kontakt-btn {
+  background-color: $main-color;
+  color: white;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  width: 226px;
+  height: 50px;
+  border: none;
+  &:hover {
+    color: rgba(51, 51, 51, 1);
+  }
+}
+@mixin footer-logo {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}

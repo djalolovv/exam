@@ -1,0 +1,129 @@
+.maqolalar-conatiner {
+  margin-top: 216px;
+}
+.maqolalar-container__title {
+  @include maqolalar-title;
+  text-align: center;
+}
+.maqolalar-list {
+  display: flex;
+  margin-top: 80px;
+}
+.maqolalar-list__item {
+  padding: 180px 22px 38px 30px;
+  background-image: url("../../img/maqolalar-img.png");
+  background-repeat: no-repeat;
+  border-radius: 5px 5px 0px 0px;
+  background-color: rgba(254, 254, 254, 1);
+  background-size: contain;
+  border: 1px solid #e4e4e2;
+}
+.maqolalar-list__item2 {
+  margin: 0 24px;
+}
+.maqolalar-item__date {
+  @include maqolalar-item-date;
+  margin-left: 212px;
+  margin-top: 41px;
+  margin-bottom: 2px;
+}
+.maqolalar-item__title {
+  @include maqolalar-item-title;
+  max-width: 190px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.maqolalar-item__text {
+  @include maqolalar-item-text;
+  max-width: 294px;
+  margin-bottom: 34px;
+}
+.maqolalar-link {
+  position: relative;
+  padding-left: 28px;
+  @include maqolalar-link;
+}
+.maqolalar-link::before {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 21px;
+  left: 0;
+  background-image: url("../../img/trace.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.maqolalar-list__item3 {
+  background-image: url("../../img/maqolalar-img3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.maqolalar-list__item2 {
+  background-color: rgba(255, 255, 255, 1);
+  flex-grow: 2;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  max-width: 640px;
+  display: flex;
+  justify-content: space-between;
+}
+.maqolalar-img {
+  width: 250px;
+  height: 510px;
+  background-image: url("../../img/maqolalar-img2.png");
+  background-size: cover;
+  background-position-x: -30px;
+  background-repeat: no-repeat;
+}
+.maqolalar-box {
+  padding-left: 31px;
+  padding-right: 31px;
+  flex-grow: 1;
+}
+.hashtag {
+  @include hashtags;
+}
+.hashtag:not(:first-child) {
+  margin-left: 8px;
+}
+.maqolalar-hashtags {
+  display: flex;
+  align-items: center;
+  margin-top: 42px;
+}
+.hashtag-2 {
+  margin: 0;
+  margin-left: auto;
+}
+.maqolalar-wrapper {
+  margin-top: 32px;
+}
+@media only screen and (max-width: 1310px) {
+  .maqolalar-container__title {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .maqolalar-list {
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+  }
+  .maqolalar-list__item {
+    width: 325px;
+    margin: 0 auto;
+  }
+  .maqolalar-list__item2 {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 625px) {
+  .maqolalar-list__item2 {
+    max-width: 360px;
+    margin: 0 auto;
+    padding-bottom: 38px;
+    flex-direction: column;
+  }
+  .maqolalar-img {
+    display: none;
+  }
+}

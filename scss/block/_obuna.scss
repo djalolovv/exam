@@ -1,0 +1,82 @@
+.obuna-box {
+  margin-top: 235px;
+  padding: 90px 0px 88px 287px;
+  background-image: url("../../img/obuna-bg.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.obuna-box__title {
+  @include obuna-title;
+  margin-bottom: 32px;
+}
+.obuna__input {
+  width: 335px;
+  height: 50px;
+  padding-left: 22px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  color: #949494;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  &:focus {
+    border-color: rgba(255, 189, 84, 1);
+  }
+}
+.obuna__btn {
+  width: 188px;
+  height: 50px;
+  background-color: #333333;
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
+  margin-left: 21px;
+}
+.obuna-list {
+  @include flex;
+}
+.obuna-img {
+  position: absolute;
+  max-width: 613px;
+  height: 481px;
+  top: -120px;
+  right: 0;
+}
+@media only screen and(max-width:1304px) {
+  .obuna-img {
+    display: none;
+  }
+  .obuna-box {
+    text-align: center;
+    padding-left: 0;
+  }
+  .obuna-list {
+    justify-content: center;
+  }
+}
+@media only screen and(max-width:741px) {
+  .obuna-box__title {
+    font-size: 35px;
+    line-height: 25px;
+  }
+  .obuna-list {
+    flex-direction: column;
+  }
+  .obuna__btn {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+@media only screen and(max-width:741px) {
+  .obuna-box__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .obuna__input {
+    max-width: 298px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,214 @@
+.xizmatlar-container {
+  margin-top: 191px;
+}
+.xizmatlar-title {
+  text-align: center;
+  @include xizmatlar-title;
+  margin-bottom: 80px;
+}
+.xizmatlar-item__title {
+  padding-top: 129px;
+  position: relative;
+  @include xizmatlar-item-title;
+  width: 126px;
+}
+.xizmatlar-item__title::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 77px;
+  background-image: url("../../img/doctor.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -21px;
+  bottom: 0;
+  margin: auto 0;
+  left: 35%;
+}
+.xizmatlar-item__title2::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 77px;
+  background-image: url("../../img/xizmatlar-img2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -21px;
+  bottom: 0;
+  margin: auto 0;
+  left: 30%;
+}
+.xizmatlar-item__title3::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 77px;
+  background-image: url("../../img/xizmatlar-img3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -21px;
+  bottom: 0;
+  margin: auto 0;
+  left: 30%;
+}
+.xizmatlar-item__title4 {
+  padding-top: 150px;
+}
+.xizmatlar-item__title4::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 77px;
+  background-image: url("../../img/xizmatlar-img4.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -21px;
+  bottom: 0;
+  margin: auto 0;
+  left: 30%;
+}
+.xizmatlar-item__title5::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 77px;
+  background-image: url("../../img/xizmatlar-img5.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -21px;
+  bottom: 0;
+  margin: auto 0;
+  left: 30%;
+}
+.xizmatlar-item__title6 {
+  padding-top: 150px;
+}
+.xizmatlar-item__title6::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 77px;
+  background-image: url("../../img/xizmatlar-img6.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -21px;
+  bottom: 0;
+  margin: auto 0;
+  left: 30%;
+}
+.xizmatlar-list__item {
+  background-color: #ffffff;
+  border-radius: 5px 5px 0px 0px;
+  display: inline-block;
+  padding: 0px 43px 42px 35px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(243, 243, 243, 1);
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.xizmatlar-list {
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+  @include flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.xizmatlar-list::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 26px;
+  background-image: url("../../img/Vector.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  cursor: pointer;
+}
+.xizmatlar-list::after {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 26px;
+  background-image: url("../../img/Vector2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 0;
+}
+.xizmatlar-banner {
+  padding: 42px 105px 43px 27px;
+  background-color: #ffffff;
+  border-radius: 0px 5px 5px 5px;
+  @include flex;
+  justify-content: space-between;
+}
+.xizmatlar-banner__img {
+  padding: 213px;
+  background-image: url("../../img/xizmatlar-bg.png");
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-top: 42px;
+}
+.xizmatlar-banner__title {
+  @include xizmatlar-banner-title;
+  margin-bottom: 18px;
+}
+.xizmatlar-banner__text {
+  @include xizmatlar-bannner-text;
+  max-width: 580px;
+  margin-bottom: 9px;
+}
+.xizmatlar__btn {
+  @include xizmatlar-btn;
+  margin-top: 34px;
+  margin-right: 21px;
+}
+.xizmatlar__btn2 {
+  @include xizmatlar-btn2;
+}
+@media only screen and (max-width: 1360px) {
+  .xizmatlar-list::after,
+  .xizmatlar-list::before {
+    display: none;
+  }
+  .xizmatlar-list {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .xizmatlar-banner {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+  .xizmatlar-banner__img {
+    max-width: 100%;
+    height: 332px;
+    padding: 0;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+  .xizmatlar-banner__text {
+    margin: 0 auto;
+    margin-bottom: 9px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .xizmatlar-banner__text {
+    font-size: 13px;
+  }
+  .xizmatlar__btn {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 385px) {
+  .xizmatlar-banner__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
